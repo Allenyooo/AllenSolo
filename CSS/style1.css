@@ -1,0 +1,976 @@
+@import url(./reset.css);
+
+/* 以下幾份html使用此份css */
+/* typeCamp.html */
+/* shop.html */
+/* itemMain.html */
+
+body {
+    background-image: url(../pics/首頁/底圖.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: rgba(255, 255, 255, 60%) */
+}
+
+/* 頁首Header */
+
+header {
+    /* height: 80px; */
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.nav {
+    display: flex;
+    /* outline: 1px red solid; */
+    justify-content: space-between;
+}
+
+.gametopiaLogo {
+    margin-left: 20px;
+}
+
+.gametopiaLogo img {
+    display: block;
+    width: 200px;
+}
+
+.nav input {
+    margin-top: 10px;
+    outline: none;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    height: 60%;
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 1.6;
+    border-radius: 40px;
+    width: 30%;
+}
+
+.headerList {
+    display: flex;
+    /* outline: 1px red solid; */
+    align-items: end;
+}
+
+.headerList li {
+    margin-right: 20px;
+}
+
+.headerList a {
+    display: block;
+    display: flex;
+    height: 56px;
+    text-decoration: none;
+    font-size: 16px;
+    /* outline: 1px red solid; */
+}
+
+.headerList img {
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+}
+
+.headerList p {
+    color: #BDBDBD;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+    padding-top: 15px;
+    margin-left: 10px;
+    letter-spacing: 5px;
+    /* outline: 1px red solid; */
+}
+
+.berger img {
+    width: 44px;
+    height: 44px;
+    margin-top: 5px;
+}
+
+
+/* 形象圖 Banner部分 */
+
+.banner {
+    padding-top: 90px;
+    width: 100%;
+    margin: 0 auto;
+    height: 492px;
+    /* outline: 2px red solid; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+}
+
+.leftBanner {
+    background-image: url(../pics/陣營桌遊/狼殺.jpg);
+    background-size: cover;
+    background-position: center center;
+    /* width: 100%;
+    height: 100%; */
+    /* padding-bottom: 60%; */
+    grid-column: 1/4;
+    grid-row: 1/3;
+    /* outline: 2px red solid; */
+}
+
+.topBanner {
+    background-image: url(../pics/陣營桌遊/機密.jpg);
+    background-size: cover;
+    background-position: center center;
+    /* padding-top: 20%; */
+    /* outline: 2px red solid; */
+    grid-column: 4/6;
+    grid-row: 1/2;
+}
+
+.botBanner {
+    /* outline: 2px red solid; */
+    background-image: url(../pics/陣營桌遊/BANG.jpg);
+    background-position: center center;
+    background-size: cover;
+    /* padding-bottom: 30%; */
+    grid-column: 4/6;
+    grid-row: 2/3;
+}
+
+.banner a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 28px;
+    /* outline: 2px red solid; */
+    transition: all .5s;
+    /* border: 5px #fff solid; */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.banner a:hover {
+    transform: scale(1.1);
+    /* overflow: hidden; */
+}
+
+/* 選擇器及分頁主標 */
+
+.campType {
+    max-width: 1440px;
+    /* outline: 2px green solid; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 30px; */
+
+}
+
+.fliter {
+    /* outline: 2px blue solid; */
+    margin-top: 80px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.fliter ul {
+    /* outline: 2px red solid; */
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.fliter li {
+    /* outline: 2px red solid; */
+    height: 20px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-left: 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.fliter p {
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.campTitle {
+    /* outline: 2px red solid; */
+    background-image: url(../pics/首頁/Camp.png);
+    background-repeat: no-repeat;
+    height: 112px;
+    width: 448px;
+    margin-right: 40px;
+    margin-top: 60px;
+}
+
+.campTitle h2 {
+    color: #229162;
+    font-size: 64px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    /* outline: 2px green solid; */
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 45px;
+}
+
+/* 桌遊推薦列表 */
+
+.campGames {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    /* outline: 2px red solid; */
+}
+
+.gameList {
+    width: 70%;
+    margin: 0 auto;
+    /* outline: 2px red solid; */
+}
+
+.gameList>li {
+    background-color: #fff;
+    width: 100%;
+    height: 312px;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.imga {
+    /* outline: 2px red solid; */
+    border-radius: 20px;
+    width: 240px;
+    height: 100%;
+    float: left;
+    /* display: none; */
+}
+
+.gameList .blood {
+    object-fit: cover;
+}
+
+.gameList .wing {
+    object-fit: cover;
+}
+
+.gameIntro {
+    /* outline: 2px blue solid; */
+    width: 60%;
+    margin-left: 350px;
+}
+
+.gameIntro h2 {
+    font-size: 32px;
+    color: #828282;
+    margin-bottom: 10px;
+}
+
+.gameIntro p {
+    font-size: 16px;
+    color: #4F4F4F;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.gameIntro ul {
+    display: flex;
+    /* outline: 2px red solid; */
+}
+
+.gameIntro li {
+    /* outline: 2px blue solid; */
+    width: 120px;
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.gameIntro li img {
+    /* outline: 2px red solid; */
+    width: 120px;
+    height: 144px;
+}
+
+
+/* 換頁鍵及To top */
+
+.changePage {
+    max-width: 1440px;
+    margin: 0 auto;
+    /* outline: 2px red solid; */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.changePage a {
+    display: inline-block;
+    text-decoration: none;
+    color: #828282;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.changePage .pageNow {
+    font-size: 48px;
+    color: #229162;
+}
+
+/* Footer */
+
+footer {
+    background-color: #C3D0EA;
+    line-height: 1.6;
+}
+
+.aboutUs {
+    text-align: center;
+}
+
+footer h2 {
+    background-image: url(../pics/首頁/About\ us.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    /* outline: 2px red solid; */
+    width: 488px;
+    margin: 0 auto;
+    text-align: right;
+    color: #229162;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    padding-top: 90px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.lineBar {
+    display: flex;
+}
+
+.lineBar hr {
+    width: 60%;
+    background-color: #229162;
+    height: 2px;
+}
+
+/* footer h2::before {
+    display: block;
+    content: '.';
+    width: 10px;
+    height: 10px;
+    background-color: #229162;
+    transform: rotate(45deg);
+} */
+
+.infoUs {
+    display: inline-block;
+    text-align: left;
+    /* outline: 2px red solid; */
+    margin-bottom: 10px;
+
+}
+
+.address {
+    background-color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.address p {
+    text-align: left;
+}
+
+
+.address img {
+    width: 60px;
+    height: 100%;
+}
+
+.ig {
+    position: absolute;
+    right: 100px;
+    bottom: 20px;
+    z-index: 1;
+}
+
+.fb {
+    position: absolute;
+    right: 68px;
+    bottom: 4px;
+    z-index: 2;
+}
+
+footer h3 {
+    font-weight: bold;
+}
+
+
+/* 商店頁 */
+
+/* 商店標題 */
+
+.shop {
+    max-width: 1440px;
+    /* outline: 2px green solid; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+    /* padding: 30px; */
+
+}
+
+.shopTitle {
+    /* outline: 2px red solid; */
+    background-image: url(../pics/首頁/Camp.png);
+    background-repeat: no-repeat;
+    height: 112px;
+    width: 448px;
+    margin-right: 40px;
+    margin-top: 60px;
+}
+
+.shopTitle h2 {
+    color: #229162;
+    font-size: 64px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    /* outline: 2px green solid; */
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 45px;
+}
+
+/* 商品列表 */
+
+.itemList {
+    max-width: 1440px;
+    margin: 0 auto;
+    /* outline: 2px red solid; */
+}
+
+.items {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1440px;
+    /* outline: 1px red solid; */
+}
+
+.items>li {
+    background-color: #fff;
+    width: 20%;
+    padding-top: 30px;
+    border-radius: 8px;
+    position: relative;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    /* transition:all 0.5s  ease; */
+}
+
+.items a {
+    text-decoration: none;
+    color: #333;
+}
+
+.items h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.imgs {
+    /* background-image: url(../pics/商品總頁/犯人在跳舞.png); */
+    background-size: cover;
+    width: 80%;
+    padding-top: 80%;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.dance {
+    background-image: url(../pics/商品總頁/犯人在跳舞.png);
+    background-position: bottom;
+}
+
+.THero {
+    background-image: url(../pics/商品總頁/英雄總是最後一個到.jpg);
+    background-size: 180%;
+    background-position: center;
+}
+
+.BANG1 {
+    background-image: url(../pics/商品總頁/BANG.jpg);
+}
+
+.WWolf {
+    background-image: url(../pics/商品總頁/狼人殺1.webp);
+    background-position: center;
+    background-size: 200%;
+}
+
+.anomia {
+    background-image: url(../pics/商品總頁/字字轉機.jpg);
+}
+
+.IGold {
+    background-image: url(../pics/商品總頁/incan-gold-cover.jpg);
+}
+
+.LLetter {
+    background-image: url(../pics/商品總頁/情書.jpg);
+    background-position: center;
+}
+
+.mago {
+    background-image: url(../pics/商品總頁/玖陣王國.jpg);
+    background-size: 150%;
+    background-position: center top;
+}
+
+.CThief {
+    background-image: url(../pics/商品總頁/乳酪大盜.webp);
+    background-size: 150%;
+    background-position: center center;
+}
+
+.YCards {
+    background-image: url(../pics/商品總頁/黃牌.webp);
+    background-size: 180%;
+    background-position: center center;
+}
+
+.BBound {
+    background-image: url(../pics/商品總頁/血契獵殺.jpg);
+}
+
+.CNames {
+    background-image: url(../pics/商品總頁/機密.jpg);
+}
+
+.citadels {
+    background-image: url(../pics/商品總頁/富饒.jpg);
+}
+
+.tbt {
+    background-image: url(../pics/商品總頁/電車難題.webp);
+}
+
+.tMesge {
+    background-image: url(../pics/商品總頁/風聲.webp);
+}
+
+.AVA {
+    background-image: url(../pics/商品總頁/阿瓦隆.jpg);
+}
+
+.items h3 {
+    margin: 0 auto;
+    text-align: center;
+    /* outline: 2px green solid; */
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.tags {
+    /* outline: 2px red solid; */
+    display: inline-flex;
+    /* margin-bottom: 20px; */
+    /* padding-right: 130px; */
+    flex-wrap: wrap;
+
+}
+
+.tags li {
+    /* outline: 2px red solid; */
+    /* height: 10px; */
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #F5F5F5;
+    margin-left: 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+    margin-bottom: 10px;
+    /* width: 500px; */
+}
+
+/* hover效果 */
+
+.hoverInfo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    padding: 20px;
+    color: #666;
+    border-radius: 8px;
+    opacity: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.hoverInfo h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.hoverInfo p {
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.hoverInfo a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #229162;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.hoverInfo button {
+    display: block;
+    text-align: center;
+    width: 70%;
+    padding: 10px;
+    background-color: #229162;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.items>li:hover .hoverInfo {
+    opacity: 1;
+}
+
+.hoverInfo a:hover {
+    background-color: black;
+}
+
+.hoverInfo button:hover {
+    background-color: black;
+}
+
+
+/* 商品主頁 */
+
+/* 商品主要介紹 */
+
+.mainItem {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 90px;
+}
+
+.viewMain {
+    margin: 0 auto;
+    max-width: 80%;
+    /* height: 200px; */
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: #ffffff59;
+}
+
+.mainPic {
+    max-width: 80%;
+    padding-bottom: 40%;
+    background-image: url(../pics/商品本頁/犯人在跳舞.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    /* outline: red 1px solid; */
+
+}
+
+.subPics {
+    display: flex;
+    /* outline: red 1px solid; */
+}
+
+.subPic1 {
+    background-image: url(../pics/商品本頁/sub1.jpeg);
+    background-position: center;
+
+    width: 25%;
+    background-size: cover;
+    padding-bottom: 25%;
+}
+
+.subPic2 {
+    background-image: url(../pics/商品本頁/sub2.jpg);
+    background-position: center;
+
+    width: 25%;
+    background-size: cover;
+    padding-bottom: 25%;
+}
+
+.subPic3 {
+    background-image: url(../pics/商品本頁/sub3.webp);
+    background-position: center;
+
+    width: 25%;
+    background-size: cover;
+    padding-bottom: 25%;
+}
+
+.subPic4 {
+    background-image: url(../pics/商品本頁/sub4.webp);
+    background-position: center;
+
+    width: 25%;
+    background-size: cover;
+    padding-bottom: 25%;
+}
+
+
+.introText {
+    width: calc(80% - 60px);
+    margin: 0 auto;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+
+.introText h1 {
+    padding-top: 20px;
+    margin-left: 30px;
+    font-size: 64px;
+    font-weight: bold;
+    color: #959595;
+    margin-bottom: 30px;
+}
+
+.introText p {
+    font-size: 20px;
+    color: #828282;
+    padding-bottom: 30px;
+}
+
+
+
+
+/* 商品數量價格及加入購物車 */
+
+.mainItem {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.priceBar {
+    width: 80%;
+    background-color: #F2F2F2;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 8px;
+    margin-bottom: 30px;
+
+    /* justify-content: space-between; */
+}
+
+.price {
+    color: #828282;
+    font-size: 64px;
+    text-align: center;
+    margin-left: 20px;
+    /* outline: 2px red solid; */
+    flex-grow: 1;
+}
+
+.itemNums {
+    /* outline: 2px red solid; */
+    flex-grow: 2;
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+
+.itemNums h4 {
+    text-align: center;
+    align-content: center;
+    margin-left: 20%;
+    margin-right: 20px;
+}
+
+.itemNums button {
+    width: 8%;
+    height: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 30px;
+    margin: auto 0;
+    padding-bottom: 35px;
+    align-content: center;
+}
+
+.itemNums input {
+    margin: auto 0;
+    margin-top: 10px;
+    height: 70%
+}
+
+.addCart {
+    flex-grow: 1;
+}
+
+
+.addCart a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    background-color: #229162;
+    width: 80%;
+    color: #fff;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+
+
+
+/* 評論評分區 */
+
+.score {
+    max-width: 1152px;
+    margin: 0 auto;
+    /* outline: 2px red solid; */
+    text-align: center;
+    border-top: 3px solid #828282;
+    border-bottom: 3px solid #828282;
+    margin-bottom: 50px;
+    padding-top: 80px;
+}
+
+.score h3 {
+    font-size: 28px;
+    color: black;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.star {
+    /* outline: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.star p {
+    /* outline: 2px solid blue; */
+    font-size: 28px;
+    margin-left: 30px;
+    line-height: 100%;
+    height: 100%;
+    align-self: center;
+    letter-spacing: 3px;
+}
+
+
+
+.score .tags li {
+    font-size: 24px;
+    /* margin-left: 50px; */
+    /* outline: 2px solid blue; */
+}
+
+.pplScore {
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.pplScore li {
+    width: 30%;
+    background-color: #F5F5F5;
+    text-align: left;
+    padding: 10px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.dato {
+    display: flex;
+    /* outline: 1px red solid; */
+    margin-bottom: 5px;
+}
+
+.dato h4 {
+    /* outline: 1px red solid; */
+    font-size: 24px;
+    margin-left: 30px;
+    align-self: center;
+    letter-spacing: 2px;
+}
+
+.dato img {
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.pplStar {
+    display: block;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.pplScore p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.rMore {
+    text-align: right;
+    display: inline-block;
+    border-bottom: 2px #666 solid;
+    margin-bottom: 80px;
+    color: #666;
+    font-size: 24px;
+}
+
+.mbIntre {
+    text-align: center;
+    font-size: 44px;
+    font-weight: bold;
+    color: #666;
+}

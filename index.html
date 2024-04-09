@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- 套用style.css -->
+
+    <script>
+        $(document).ready(function () {
+            $('.hotType li').hover(function () {
+                $(this).css('opacity', '1');
+                $(this).siblings('.hotType li').css('opacity', '0.3')
+            }, function(){
+                $(this).siblings('.hotType li').css('opacity', '1');
+            });
+            }, 
+        );
+    </script>
+
+</head>
+
+<body>
+    <!-- 頁首Header -->
+    <header>
+        <div class="nav">
+            <a href="index.html" class="gametopiaLogo">
+                <img src="./pics/首頁/Header Logo.svg" alt="">
+            </a>
+            <input type="text" placeholder="人數 / 類型 / 時間段">
+            <ul class="headerList">
+                <li>
+                    <a href="member1.html">
+                        <img src="./pics/首頁/logIn.jpg" alt="">
+                        <p>LOG IN</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="shoppingCart.html">
+                        <img src="./pics/首頁/cart.jpg" alt="">
+                        <p>CART</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="berger">
+                        <img src="./pics/首頁/berger.jpg" alt="">
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </header>
+
+    <!-- 熱門分類 -->
+
+    <div class="hotType">
+
+        <ul>
+            <li class="item1">
+                <a href="itemMain.html">
+                    <h3>小品遊戲</h3>
+                    <p>犯人在跳舞</p>
+                </a>
+            </li>
+            <li class="item2">
+                <a href="itemMain.html">
+                    <h3>派對遊戲</h3>
+                    <p>電車難題</p>
+                </a>
+            </li>
+            <li class="item3">
+                <a href="itemMain.html">
+                    <h3>策略遊戲</h3>
+                    <p>玖陣王國</p>
+                </a>
+            </li>
+            <li class="item4">
+                <a href="itemMain.html">
+                    <h3>派對遊戲</h3>
+                    <p>字字轉機</p>
+                </a>
+            </li>
+            <li class="item5">
+                <a href="itemMain.html">
+                    <h3>陣營遊戲</h3>
+                    <p>機密代號</p>
+                </a>
+            </li>
+            <li class="item6">
+                <a href="itemMain.html">
+                    <h3>策略遊戲</h3>
+                    <p>ROOT</p>
+                </a>
+            </li>
+            <li class="item7">
+                <a href="itemMain.html">
+                    <h3>小品遊戲</h3>
+                    <p>情書</p>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+
+   
+    <!-- 輪轉活動banner  -->
+
+    <article class="events">
+
+        <div class="eventTitle">
+            <h2>近期活動</h2>
+        </div>
+
+        <div class="bannerSet">
+                    
+            <div class="banner b1"><a href="typeCamp.html"></a></div>
+            <div class="banner b2"><a href="typeCamp.html"></a></div>
+            <div class="banner b3"><a href="typeCamp.html"></a></div>
+            <div class="banner b4"><a href="typeCamp.html"></a></div>
+                   
+        </div>
+    </article>
+
+    <!-- 加入我們 Join us -->
+
+    <article class="JoinUS">
+
+        <div class="joinTitle">
+            <h2>加入我們</h2>
+        </div>
+
+        <div class="JnB">
+            <div class="leftJoin">
+                <div class="textBox joinBox">
+                    <h2>揪團一起玩</h2>
+                    <p>身邊朋友總是只愛滑手機? <br>
+                        喜歡的桌遊類型卻得不到朋友的青睞? <br>
+                        不用擔心<br>
+                        總是有一群熱情的小夥伴在這裡<br>
+                        一起討論 一同遊玩
+                    </p>
+                    <a href="forum.html">
+                        Join us !
+                    </a>
+                </div>
+            </div>
+            <div class="rightBooking">
+                <div class="textBox bookBox">
+                    <h2>訂位超方便</h2>
+                    <p>各種活動 日常套餐 <br>
+                        老是不知道到底怎麼算嗎?<br>
+                        簡單明瞭的訂位流程<br>
+                        冒險隨時可以開始!
+                    </p>
+                    <a href="booking.html">
+                        Join us !
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </article>
+
+    <!-- 熱門遊戲討論 -->
+
+    <div class="hotGames">
+        <div class="hotTitle">
+            <h2>熱門討論</h2>
+        </div>
+
+        <ul class="postCard">
+            <li class="dance">
+                <a href="shop.html" class="fliter">
+                    <div class="dato">
+                        <div class="PnN">
+                            <img src="./pics/商品本頁/派大星大頭.jpg" alt="">
+                        </div>
+                        <div class="pplInfo">
+                            <h4>Patrik Star</h4>
+                            <div class="timeInfo">
+                                <p>1 Hour ago</p>
+                                <p>Posted on </p>
+                                <p>犯人在跳舞-Criminal</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>超好笑的遊戲， <br>
+                        最喜歡每一局開始的時候總是要先尖叫的部分， <br>
+                        不到最後一刻不會知道誰是贏家XDDD
+                    </p>
+                </a>
+            </li>
+
+            <li class="incep">
+                <a href="shop.html" class="fliter">
+                    <div class="dato">
+                        <div class="PnN">
+                            <img src="./pics/商品本頁/Allen大頭.png" alt="">
+                        </div>
+                        <div class="pplInfo">
+                            <h4>Allen Tuan</h4>
+                            <div class="timeInfo">
+                                <p>16 mins ago</p>
+                                <p>Posted on </p>
+                                <p>盜夢都市-INCEPTION</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p> 2036年玩過最有趣!常常遇到莫名的突發狀況，跟著指示一步一步才發現原來早有預兆，一切的變因都是自己的選擇所影響出來的! 神作沒有之一!
+                    </p>
+                </a>
+            </li>
+
+            <li class="Wwof">
+                <a href="shop.html" class="fliter">
+                    <div class="dato">
+                        <div class="PnN">
+                            <img src="./pics/商品本頁/阿寶大頭.jpg" alt="">
+                        </div>
+                        <div class="pplInfo">
+                            <h4>Allen Tuan</h4>
+                            <div class="timeInfo">
+                                <p>1 mins ago</p>
+                                <p>Posted on </p>
+                                <p>狼人殺-Werewolf</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p> 這版本人神狼之間的平衡做得很好 <br>
+                        個人最喜歡的角色是隱狼 <br>
+                        操作空間非常大 <br>
+                        缺點就是沒有太多發言權
+                    </p>
+                </a>
+            </li>
+
+
+        </ul>
+
+
+        <a href="" class="rMore">READ MORE</a>
+
+
+
+    </div>
+
+
+
+
+    <!-- To top  -->
+
+    <div class="toTop">
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="aboutUs">
+            <h2>關於我們</h2>
+            <div class="lineBar">
+                <span></span>
+                <hr><span></span>
+            </div>
+            <p class="infoUs">由一群志同道合且熱愛桌遊的朋友們組成，<br>
+                每一位來到這邊的玩家可以暫時拋開生活及工作的繁瑣，<br>
+                專注於眼前的這 一把遊戲/一場冒險，<br>
+                歡聲笑語、成王敗寇、爾虞我詐<br>
+                只要你享受當下，都是我們所樂見的 。</p>
+            <div class="address">
+                <p>地址 : 天龍國天龍省天龍區天龍路87段87巷87號87樓</p>
+                <p>聯絡電話 : (029) 8756-4321</p>
+                <p>聯絡信箱:gametopia877@xmail.com</p>
+                <a href="" class="ig">
+                    <img src="./pics/首頁/ig.png" alt="">
+                </a>
+                <a href="" class="fb">
+                    <img src="./pics/首頁/fb.png" alt="">
+                </a>
+            </div>
+            <h3>此網站為學生練習用作業，無有任何營利行為，若有侵權問題請聯繫以下信箱，會立即下架 <br>
+                smpss901@gmail.com</h3>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

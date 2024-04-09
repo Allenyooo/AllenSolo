@@ -1,0 +1,572 @@
+@import url(./reset.css);
+
+/* 以下幾份html使用此份css */
+/* member1.html */
+/* member2.html */
+/* member3.html */
+/* shoppingCart.html */
+
+
+body {
+    background-image: url(../pics/首頁/底圖.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
+    /* background-color: rgba(255, 255, 255, 60%) */
+}
+
+
+/* 頁首Header */
+
+header {
+    /* height: 80px; */
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+}
+
+.nav {
+    display: flex;
+    /* outline: 1px red solid; */
+    justify-content: space-between;
+}
+
+.gametopiaLogo {
+    margin-left: 20px;
+}
+
+.gametopiaLogo img {
+    display: block;
+    width: 200px;
+}
+
+.nav input {
+    margin-top: 10px;
+    outline: none;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    height: 60%;
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 1.6;
+    border-radius: 40px;
+    width: 30%;
+}
+
+.headerList {
+    display: flex;
+    /* outline: 1px red solid; */
+    align-items: end;
+}
+
+.headerList li {
+    margin-right: 20px;
+}
+
+.headerList a {
+    display: block;
+    display: flex;
+    height: 56px;
+    text-decoration: none;
+    font-size: 16px;
+    /* outline: 1px red solid; */
+}
+
+.logined {
+    display: block;
+    border-radius: 50%;
+}
+
+.headerList img {
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+}
+
+.headerList p {
+    color: #BDBDBD;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+    padding-top: 15px;
+    margin-left: 10px;
+    letter-spacing: 5px;
+    /* outline: 1px red solid; */
+}
+
+.berger img {
+    width: 44px;
+    height: 44px;
+    margin-top: 5px;
+}
+
+
+
+
+/* Footer */
+
+footer {
+    background-color: #C3D0EA;
+    line-height: 1.6;
+}
+
+.aboutUs {
+    text-align: center;
+}
+
+footer h2 {
+    background-image: url(../pics/首頁/About\ us.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    /* outline: 2px red solid; */
+    width: 488px;
+    margin: 0 auto;
+    text-align: right;
+    color: #229162;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    padding-top: 90px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.lineBar {
+    display: flex;
+}
+
+.lineBar hr {
+    width: 60%;
+    background-color: #229162;
+    height: 2px;
+}
+
+/* footer h2::before {
+    display: block;
+    content: '.';
+    width: 10px;
+    height: 10px;
+    background-color: #229162;
+    transform: rotate(45deg);
+} */
+
+.infoUs {
+    display: inline-block;
+    text-align: left;
+    /* outline: 2px red solid; */
+    margin-bottom: 10px;
+
+}
+
+.address {
+    background-color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.address p {
+    text-align: left;
+}
+
+
+.address img {
+    width: 60px;
+    height: 100%;
+}
+
+.ig {
+    position: absolute;
+    right: 100px;
+    bottom: 20px;
+    z-index: 1;
+}
+
+.fb {
+    position: absolute;
+    right: 68px;
+    bottom: 4px;
+    z-index: 2;
+}
+
+footer h3 {
+    font-weight: bold;
+}
+
+/* 大標Title */
+
+.mbTitle {
+    max-width: 1440px;
+    padding-top: 90px;
+}
+
+.memberTitle {
+    max-width: 30%;
+    /* outline: 2px red solid; */
+    background-image: url(../pics/會員頁/Member.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 112px;
+    margin: 0 0 0 auto;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.memberTitle h2 {
+    display: inline-block;
+    color: #229162;
+    font-size: 64px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    /* outline: 2px green solid; */
+    position: absolute;
+    right: -10%;
+    bottom: -30%;
+}
+
+/* 會員資料 */
+
+.file {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.folder {
+
+    background-repeat: no-repeat;
+    width: 80%;
+    margin: 0 auto;
+    height: 800px;
+    /* outline: 2px solid red; */
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.m1 {
+    background-image: url(../pics/會員頁/file1.png);
+}
+
+.m2 {
+    background-image: url(../pics/會員頁/file2.png);
+}
+
+.m3 {
+    background-image: url(../pics/會員頁/file3.png);
+}
+
+.folder a {
+    width: 20%;
+    padding: 30px 20px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 28px;
+    color: #229162;
+    font-weight: bold;
+    /* outline: 2px solid red; */
+
+}
+
+.mInfo {
+    position: absolute;
+    left: 00px;
+    top: 15px;
+}
+
+.mPartm {
+    position: absolute;
+    left: 290px;
+    top: 15px;
+}
+
+.collect {
+    position: absolute;
+    left: 580px;
+    top: 15px;
+}
+
+.file h1 {
+    margin-bottom: 5%;
+    padding-top: 13%;
+    margin-left: 15%;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.memInfo {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.mempic {
+    margin-left: 8%;
+    /* float: left; */
+    /* display: inline-block; */
+    /* outline: 1px red solid; */
+    width: 30%;
+    /* margin-bottom: 100%; */
+    height: 330px;
+    border-radius: 50%;
+    background-image: url(../pics/會員頁/派大星大頭.jpg);
+    background-size: cover;
+}
+
+
+.memInfo ul {
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    /* outline: 1px red solid; */
+    height: 100%;
+    width: 50%;
+    border-radius: 12px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-left: 5%;
+}
+
+.memInfo li {
+    /* outline: 1px green solid; */
+    display: flex;
+    width: 50%;
+    height: 80px;
+    outline: 1px black solid;
+
+}
+
+.memInfo h3 {
+    background-color: #229162;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    width: 50%;
+    align-content: center;
+    /* border-radius: 12px; */
+    letter-spacing: 5px;
+}
+
+.memInfo h4 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    width: 50%;
+    align-content: center;
+    letter-spacing: 3px;
+}
+
+.folder textarea {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    border: #229162 2px solid;
+    font-size: 24px;
+}
+
+/* 購物車頁 */
+
+/* 大標Title */
+
+.scTitle {
+    max-width: 1440px;
+    padding-top: 90px;
+}
+
+.shopcartTitle {
+    max-width: 30%;
+    /* outline: 2px red solid; */
+    background-image: url(../pics/購物車頁/Shopping\ Cart.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 112px;
+    margin: 0 0 0 auto;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.shopcartTitle h2 {
+    display: inline-block;
+    color: #229162;
+    font-size: 64px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    /* outline: 2px green solid; */
+    position: absolute;
+    right: -10%;
+    bottom: 5%;
+}
+
+/* 購物車內容 */
+
+.shoppingCart {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.shoppingCart>h2 {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 1px;
+    border-bottom: 3px solid black;
+}
+
+.shoppingCart>section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopCards {
+    padding-top: 30px;
+    width: 60%;
+}
+
+.shopCards li {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #333 1px solid;
+    box-sizing: border-box;
+}
+
+.iimg {
+    width: 25%;
+    height: 200px;
+    border-radius: 12px;
+}
+
+.dance {
+    background-image: url(../pics/購物車頁/犯人在跳舞.png);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.Ycard {
+    background-image: url(../pics/購物車頁/黃牌.webp);
+    background-size: 180%;
+    background-position: center center;
+}
+
+.TopH {
+    background-image: url(../pics/購物車頁/英雄總是最後一個到.jpg);
+    background-size: 180%;
+    background-position: center center;
+}
+
+.tTrial {
+    background-image: url(../pics/購物車頁/電車難題.webp);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.infoCard {
+    width: 80%;
+    padding: 2% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 0;
+}
+
+
+.NnP {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    width: 80%;
+    /* outline: red 1px solid; */
+}
+
+.NnP h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buttons {
+    margin-left: 5%;
+    width: 80%;
+    /* outline: 1px red solid; */
+    text-align: right;
+    cursor: pointer;
+}
+
+.buttons button {
+    display: inline-block;
+    font-size: 20px;
+    width: 6%;
+    text-align: center;
+}
+
+.buttons input {
+    display: inline-block;
+    width: 20%;
+    font-size: 24px;
+    text-align: center;
+}
+
+.del {
+    margin-left: 5%;
+    color: red;
+    font-weight: bold;
+    border: red 2px solid;
+    border-radius: 4px;
+    background-color: #ffffff00;
+    cursor: pointer;
+}
+
+
+.priceTotal {
+    padding-top: 30px;
+    width: 30%;
+}
+
+.priceTotal li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+    margin-bottom: 10%;
+}
+
+.priceTotal p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.priceTotal span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.priceTotal h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.checkout button {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #A23D49;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
