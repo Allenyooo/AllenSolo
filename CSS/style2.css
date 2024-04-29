@@ -327,13 +327,13 @@ footer h3 {
 }
 
 .tcgg {
-    background-image: url(../pics/討論區/TCG.JPG);
+    background-image: url(../pics/討論區/Frame\ 277.png);
     background-position: center center;
     background-size: 180%;
 }
 
 .fliter {
-    background-color: rgba(255, 255, 255, .85);
+    /* background-color: rgba(255, 255, 255, .85); */
     border-radius: 12px;
 }
 
@@ -387,7 +387,7 @@ footer h3 {
 .simpInfo {
     /* outline: red 1px solid; */
     height: 70px;
-    background: linear-gradient(0, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, .15));
+    /* background: linear-gradient(0, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, .15)); */
     display: flex;
     justify-content: space-between;
     align-items: center;

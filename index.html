@@ -13,9 +13,9 @@
         $(document).ready(function () {
             $('.hotType li').hover(function () {
                 $(this).css('opacity', '1');
-                $(this).siblings('.hotType li').css('opacity', '0.3')
+                $(this).siblings().css('opacity', '0.3')
             }, function(){
-                $(this).siblings('.hotType li').css('opacity', '1');
+                $(this).siblings().css('opacity', '1');
             });
             }, 
         );
