@@ -3,200 +3,42 @@
 /* 以下幾份html使用此份css */
 /* index.html */
 
-body {
-    background-image: url(../pics/首頁/底圖.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: Outfit, Goldman, Open Sans;
-    background-color: #ffffff;
-    /* background-color: rgba(255, 255, 255, 60%) */
-}
 
-
-/* 頁首Header */
-
-header {
-    /* height: 80px; */
-    width: 100%;
-    background-color: #fff;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 5;
-}
-
-.nav {
-    display: flex;
-    /* outline: 1px red solid; */
-    justify-content: space-between;
-}
-
-.gametopiaLogo {
-    margin-left: 20px;
-}
-
-.gametopiaLogo img {
-    display: block;
-    width: 200px;
-}
-
-.nav input {
-    margin-top: 10px;
-    outline: none;
-    border: transparent;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    height: 60%;
-    padding: 10px 20px;
-    font-size: 20px;
-    line-height: 1.6;
-    border-radius: 40px;
-    width: 30%;
-}
-
-.headerList {
-    display: flex;
-    /* outline: 1px red solid; */
-    align-items: end;
-}
-
-.headerList li {
-    margin-right: 20px;
-}
-
-.headerList a {
-    display: block;
-    display: flex;
-    height: 56px;
-    text-decoration: none;
-    font-size: 16px;
-    /* outline: 1px red solid; */
-}
-
-.headerList img {
-    width: 32px;
-    height: 32px;
-    margin-top: 10px;
-}
-
-.headerList p {
-    color: #BDBDBD;
-    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
-    padding-top: 15px;
-    margin-left: 10px;
-    letter-spacing: 5px;
-    /* outline: 1px red solid; */
-}
-
-.berger img {
-    width: 44px;
-    height: 44px;
-    margin-top: 5px;
-}
-
-
-
-
-/* Footer */
-
-footer {
-    background-color: #C3D0EA;
-    line-height: 1.6;
-}
-
-.aboutUs {
-    text-align: center;
-}
-
-footer h2 {
-    background-image: url(../pics/首頁/About\ us.png);
-    background-repeat: no-repeat;
-    height: 100px;
-    /* outline: 2px red solid; */
-    width: 488px;
-    margin: 0 auto;
-    text-align: right;
-    color: #229162;
-    font-size: 32px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgb(255, 255, 255);
-    padding-top: 90px;
-    padding-right: 30px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}
-
-.lineBar {
-    display: flex;
-}
-
-.lineBar hr {
-    width: 60%;
-    background-color: #229162;
-    height: 2px;
-}
-
-/* footer h2::before {
-    display: block;
-    content: '.';
-    width: 10px;
-    height: 10px;
-    background-color: #229162;
-    transform: rotate(45deg);
-} */
-
-.infoUs {
-    display: inline-block;
-    text-align: left;
-    /* outline: 2px red solid; */
-    margin-bottom: 10px;
-
-}
-
-.address {
-    background-color: #fff;
-    width: 40%;
-    margin: 0 auto;
-    border-radius: 20px;
-    padding: 10px;
-    line-height: 1.8;
-    margin-bottom: 10px;
-    position: relative;
-}
-
-.address p {
-    text-align: left;
-}
-
-
-.address img {
-    width: 60px;
-    height: 100%;
-}
-
-.ig {
-    position: absolute;
-    right: 100px;
-    bottom: 20px;
-    z-index: 1;
-}
-
-.fb {
-    position: absolute;
-    right: 68px;
-    bottom: 4px;
-    z-index: 2;
-}
-
-footer h3 {
-    font-weight: bold;
-}
 
 
 /* 熱門分類 */
 
 .hotType {
-    padding-top: 89px;
+    padding-top: 69px;
+}
+
+.newTitle {
+
+    /* outline: 2px red solid; */
+    background-image: url(../pics/首頁/New\ Arrivals.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    /* background-size: 60%; */
+    background-position: center;
+    height: 112px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 80px;
+    border-bottom: #229162 4px solid;
+    margin-bottom: 50px;
+    display: none;
+}
+
+.newTitle h2 {
+    display: inline-block;
+    color: #229162;
+    font-size: 64px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    /* outline: 2px green solid; */
+    position: absolute;
+    right: 30%;
+    bottom: 0%;
 }
 
 
@@ -241,15 +83,17 @@ footer h3 {
     opacity: 0;
 }
 
-.hotType p {
+
+.hotType p{
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 5px;
     color: #fff;
-    height: 30px;
+    height: 24px;
     background-color: black;
     background: linear-gradient(rgba(0, 0, 0, 0), #000);
     transition: 0.7s;
+    flex-shrink: 0;
     /* border: 1px solid #fff; */
     text-align: center;
     opacity: 0;
@@ -292,8 +136,9 @@ footer h3 {
 }
 
 .hotType .item6 {
-    background-image: url(../pics/首頁/ROOT大圖.jpg);
+    background-image: url(../pics/首頁/rootNEW.jpg);
     background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
     flex-grow: 2;
 }
@@ -304,28 +149,6 @@ footer h3 {
     background-size: cover;
     flex-grow: 2;
 }
-
-/* .hotType li::before {
-    content: "";
-    display: block;
-    background-color: #ffffffc4;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-} */
-
-
-/* 
-.hotType li:nth-child(1):hover~li:nth-child(2) {
-    opacity: 0.2;
-} */
-
-/* .hotType li:hover li:not(:hover) {
-    opacity: 0.2;
-} */
 
 
 
@@ -351,6 +174,7 @@ footer h3 {
     max-width: 1440px;
     height: 800px;
     margin: 0 auto;
+    overflow: hidden;
     /* margin-bottom: 20px; */
 }
 
@@ -359,7 +183,6 @@ footer h3 {
     /* outline: 2px red solid; */
     background-image: url(../pics/首頁/Events.png);
     background-repeat: no-repeat;
-    background-position: center top;
     /* background-size: 60%; */
     background-position: center;
     height: 112px;
@@ -386,91 +209,88 @@ footer h3 {
     /* display: flex; */
     position: relative;
     /* outline: red 2px solid; */
-    perspective: 1000px;
+    perspective: 1300px;
     /* overflow: hidden; */
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 20px;
 }
 
 .bannerSet a {
-    display: block;
+    display: inline-block;
     text-decoration: none;
-    width: 100%;
-    height: 100%;
+    /* height: 500px; */
+    perspective: 1300px;
+    /* outline: 2px red solid; */
+    margin: 0 auto;
+    border-radius: 20px;
 }
 
-.banner {
-    /* max-width: 1330px; */
+.bannerSet img{
+    display: block;
     margin: 0 auto;
-    /* background-image: url(../pics/首頁/banner1.webp); */
-    background-repeat: no-repeat;
-    background-size: 80%;
-    background-position: center center;
-    width: 80%;
     border-radius: 20px;
     height: 500px;
-    margin-top: 50px;
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: 10%;
+    left: 0;
+     */
+}
+
+.banner{
+    position: absolute;
+    left: 18%;
+    top: 0;
+    transition: 1s;
+    border-radius: 20px;
+}
+
+
+.b0{
+    transform: translate3d(0px, 0px, 0px);
+    z-index: 40;
 }
 
 .b1{
-    background-image: url(../pics/首頁/banner4.jpg);
-    transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);
-    z-index: 3;
+    transform: translate3d(-469px, 50px, -500px);
+    z-index: 30;
 }
+
 .b2{
-    background-image: url(../pics/首頁/banner2.jpg);
-    transform: translate3d(-608px, 0px, -400px) rotateX(0deg) rotateY(0deg);
-    z-index: 2;
+    transform: translate3d(0px, 0px, -3200px);
+    z-index: -10;
 }
 
 .b3{
-    background-image: url(../pics/首頁/banner3.webp);
-    transform: translate3d(0px, 0px, -3200px) rotateX(0deg) rotateY(0deg);
-    z-index: -1;
+    transform: translate3d(469px, 50px, -500px);
+    z-index: 30;
 }
 
-.b4{
-    background-image: url(../pics/首頁/banner1.webp);
-    transform: translate3d(608px, 0px, -400px) rotateX(0deg) rotateY(0deg);
-    z-index: 2;
-}
-
-/* .banner {
-    animation: rotate 4s ease infinite;
-} */
-
-@keyframes rotate {
-    0% {
-        transform: rotateY(0deg);
-    }
-    100% {
-        transform: rotateY(360deg);
-    }
-}
-
-/* .toLeft {
-    width: 84px;
-    height: 84px;
-    background: url(https://www.harrypottermagicawakened.tw/pc/gw/20221130103031//img/btn_prev_e111fd3.png) no-repeat center;
+.button {
+    padding: 15px 15px;
+    border-radius: 12px;
+    display: inline-block;
+    font-size: 3rem;
     cursor: pointer;
-    align-self: center;
-    position: absolute;
-    left: 15%;
-    border: none;
+    color: #FFF;
+    background-color: #22916334;
+    /* box-shadow: 0px 9px #999; */
+    transition-duration: 0.4s;
 }
 
-.toRight {
-    width: 84px;
-    height: 84px;
-    background: url(https://www.harrypottermagicawakened.tw/pc/gw/20221130103031//img/btn_next_1ef12a8.png) no-repeat center;
-    cursor: pointer;
-    align-self: center;
+.lbtn{
     position: absolute;
-    right: 15%;
-    border: none;
-} */
+    left: 0px;
+    top: 200px;
+    z-index: 50;
+}
 
+.rbtn{
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    z-index: 50;
+}
 
 /* 加入我們 */
 
@@ -485,8 +305,6 @@ footer h3 {
     /* outline: 2px red solid; */
     background-image: url(../pics/首頁/Join\ us.png);
     background-repeat: no-repeat;
-    background-position: center top;
-    /* background-size: 60%; */
     background-position: center;
     height: 112px;
     margin: 0 auto;
@@ -573,7 +391,7 @@ footer h3 {
     display: block;
     font-size: 20px;
     text-decoration: none;
-    color: #828282;
+    color: #fff;
     font-weight: bold;
     text-align: center;
     line-height: 50px;
@@ -582,7 +400,7 @@ footer h3 {
     /* outline: red 1px solid; */
     border-radius: 25px;
     margin: 0 auto;
-    background-color: #FFE352;
+    background-color: #229162;
 }
 
 
@@ -638,6 +456,7 @@ footer h3 {
 
 .postCard>li {
     width: 30%;
+    /* height: 10%; */
     border-radius: 8px;
     background-position: center center;
     background-size: cover;
@@ -647,8 +466,10 @@ footer h3 {
     background-image: url(../pics/首頁/犯人在跳舞.png);
 }
 
-.incep {
-    background-image: url(../pics/首頁/盜夢都市.jpg);
+.postCard .incep {
+    background-image: url(../pics/首頁/inception111.png);
+    background-size: cover;
+    background-position: center center;
 }
 
 .Wwof {
@@ -658,46 +479,89 @@ footer h3 {
 .dato {
     display: flex;
     /* outline: 1px red solid; */
-    margin-bottom: 20px;
 }
 
 
 .PnN {
     width: 25%;
-    display: flex;
+    /* display: flex; */
     /* outline: red 1px solid; */
+ 
 }
 
+
+
 .pplInfo {
-    align-self: center;
+    align-self: left;
+    margin-left: 20px;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center;
+    align-content: center; */
 }
+
+.thisGameTag{
+    /* outline: red 1px solid; */
+
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+    background-color: #FF6161;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
 
 .pplInfo h4 {
     /* outline: 1px red solid; */
     font-size: 24px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     align-self: center;
     letter-spacing: 2px;
-    display: inline-block;
+    display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
+.pplSay{
+    display: block;
+    background-color: #fff;
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px black;
+    line-height: 1.2;
+}
+
 .timeInfo {
-    display: flex;
+    width: 95%;
     /* outline: 1px red solid; */
-    font-size: 11px;
-    /* display: inline-block; */
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .timeInfo p {
+    margin-bottom: 10px;
+}
+
+.scoreStar i{
+    font-size: 12px;
+    color: #FFDD55;
     margin-left: 20px;
 }
 
-.timeInfo :nth-child(3) {
-    color: #BD368F;
-    font-weight: bold;
+.thisGameScore{
+    display: inline-block;
+    color: #4F4F4F;
+    margin-left: 5px;
+    font-size: 12px;
 }
+
+
 
 .PnN img {
     display: block;
@@ -714,22 +578,23 @@ footer h3 {
     padding: 10px;
     border-radius: 8px;
     box-shadow: inset 0 0 5px black;
+    line-height: 1.2;
 }
 
 
 .fliter {
     display: block;
-    background-color: rgba(255, 255, 255, .85);
+    background-color: rgba(255, 255, 255, .90);
     border-radius: 8px;
     padding: 10px;
     cursor: pointer;
     text-decoration: none;
     color: #333;
-    height: 92%;
+    height: 93%;
 }
 
 .fliter:hover {
-    box-shadow: 3px 3px 2px black;
+    outline: 3px solid #229162;
 }
 
 .rMore {
@@ -738,3 +603,425 @@ footer h3 {
     color: black;
     /* text-decoration: none; */
 }
+
+
+
+/* 以下RWD */
+
+
+
+
+@media screen and (max-width: 1280px) {
+
+
+    .banner{
+        left: 8%;
+    }
+
+    .banner img{
+        width: 80%;
+        height: 60%;
+    }
+
+    .pplInfo h4{
+        font-size: 20px;
+        display: inline-block;
+    }
+
+    .PnN img{
+        width: 60px;
+    }
+
+    .timeInfo{
+        display: inline-block;
+        width: auto;
+    }
+
+    .timeInfo>p{
+        display: none;
+    }
+
+    .thisGameScore{
+        margin-left: 0;
+    }
+
+    .scoreStar{
+        display: inline-block;
+    }
+
+    .thisGameTag{
+        margin-right: 110px;
+        font-size: 7px;
+        padding: 5px 10px;
+    }
+
+    .scoreStar i{
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hotType{
+        order: -1;
+        max-width: 900px;
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+
+    .hotType a{
+        position: relative;
+    }
+
+    .hotType h3{
+        display: none;
+    }
+
+    .hotType p{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        opacity: 1;
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .newTitle{
+        display: block;
+        max-width: 700px;
+    }
+
+    .hotType ul{
+        height: 550px;
+        flex-wrap: wrap;
+    }
+
+    .hotType li{
+        background-size: cover;
+        width: 20%;
+        height: 50%;
+        margin-right: 10px;
+        flex-grow:initial;
+        margin-bottom: 10px; 
+        box-sizing: border-box;
+        /* padding-bottom: 10px; */
+    }
+
+    .hotType li:nth-child(4){
+        padding-bottom: 10px;
+    }
+
+    .hotType li:nth-child(6){
+        padding-bottom: 10px;
+    }
+
+    .item1{
+        order: -2;
+    }
+
+    .item2{
+        order: -1;
+    }
+
+    .item3{
+        display: none;
+    }
+
+    .item4{
+        order: 2;
+    }
+
+    .item5{
+        order: 0;
+    }
+
+    .item6{
+        order: 1;
+    }
+
+    .eventTitle{
+        display: none;
+    }
+
+    .events{
+        padding-top: 50px;
+        height: auto;
+        order: -2;
+    }
+
+    .bannerSet{
+        width: 700px;
+        height: 350px;
+        border-radius: 0;
+    }
+
+    .bannerSet img{
+        border-radius: 0;
+
+    }
+
+    .banner{
+        width: 700px;
+        height: 350px;
+        left: 0;
+        border-radius: 0;
+
+    }
+
+    .banner img{
+        width: 700px;
+        height: 350px;
+        border-radius: 0;
+        /* object-fit: cover ; */
+    }
+
+    .b0{
+        transform: translate3d(0px, 0px, 0px);
+        z-index: 40;
+    }
+    
+    .b1{
+        transform: translate3d(-508px, 0px, 0px);
+        z-index: 30;
+        opacity: 0;
+    }
+    
+    .b2{
+        transform: translate3d(1000px, 500px, 0px);
+        z-index: 20;
+        opacity: 0;
+    }
+    
+    .b3{
+        transform: translate3d(469px, 0px, 0px);
+        z-index: 10;
+        opacity: 0;
+    }
+
+    .lbtn{
+        position: absolute;
+        left: 0px;
+        top: 150px;
+        z-index: 50;
+    }
+    
+    .rbtn{
+        position: absolute;
+        right: 0px;
+        top: 150px;
+        z-index: 50;
+    }
+
+    
+    .JoinUS{
+        width: 700px;
+    } 
+    
+
+    .joinTitle{
+        max-width: 700px;
+        border-radius: 0px;
+    }
+
+    .textBox{
+        height: 100%;
+        border-radius: 0px;
+        padding: 20px;
+    }
+
+    .leftJoin, .rightBooking{
+        width: 67%;
+    }
+
+    .joinBox{
+        top: 0;
+        right: -50%;
+    }
+
+    .bookBox{
+        top: 0;
+        left: -50%;
+    }
+
+    .textBox h2{
+        font-size: 24px;
+    }
+
+    .textBox p{
+        font-size: 16px;
+    }
+
+    .hotGames{
+        width: 700px;
+    } 
+
+    .thisGameTag{
+        width: 50%;
+        /* display: none; */
+    }
+
+    .PnN img{
+        width: 30px;
+    }
+
+    .pplInfo{
+        margin-right: 15px;
+    }
+
+    .pplSay{
+        /* float: left; */
+        width: 85%;
+        font-size: 12px;
+    }
+
+    .hotTitle, .joinTitle, .eventTitle, .newTitle{
+        /* background-size: fill; */
+        /* background-size: 70%; */
+        font-size: 32px;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .eventTitle, .joinTitle, .hotTitle, .newTitle{
+        width: 392px;
+        background-size: 70%;
+    }
+
+    .postCard{
+        display: block;
+    }
+
+    .postCard li{
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+
+    }
+
+    .PnN{
+        width: 150px;
+    }
+
+    .PnN img{
+        width: 100px;
+    }
+
+    .thisGameTag{
+        width: auto;
+        margin-right: 10px;
+    }
+
+    .pplSay{
+        width: 80%;
+    }
+
+    .hotType{
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 725px) {
+
+    .eventTitle, .joinTitle, .hotTitle{
+        width: 392px;
+        background-size: 60%;
+    }
+
+    .bannerSet, .JnB, .hotGames{
+        width: 392px;
+    }
+
+    .postCard li{
+        width: 100%;
+    }
+
+    .banner{
+        width: 392px;
+        left: 0;
+    }
+
+    .banner img{
+        object-fit: cover;
+        width: 392px;
+        height: 392px;
+    }
+
+    .JoinUS{
+        margin-bottom: 0;
+        width: 392px;
+    }
+
+    .textBox{
+        width: 100%;
+        height: 50%;
+        border-radius: 0px;
+        padding: 20px;
+    }
+
+    .joinBox, .bookBox{
+        top:auto;
+        bottom: 0%;
+        right: 0;
+        left: 0;
+    }
+
+   
+    .leftJoin, .rightBooking{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .rMore{
+        text-align: center;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .bannerSet {
+        margin-top: 20px;
+    }
+
+    .newTitle {
+        margin-bottom: 10px;
+    }
+
+    .JnB {
+        padding-top: 10px;
+    }
+
+    .hotTitle{
+        margin-bottom: 10px;
+    }
+
+    .postCard li {
+        width: 90%;
+    }
+
+    .thisGameTag{
+        margin-right: 100px;
+    }
+
+    .hotType p{
+        letter-spacing: 1px;
+    }
+
+}
+
+
+
+

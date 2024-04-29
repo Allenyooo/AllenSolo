@@ -5,99 +5,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首頁</title>
+    
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/header n footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- 套用style.css -->
-
-    <script>
-        $(document).ready(function () {
-            $('.hotType li').hover(function () {
-                $(this).css('opacity', '1');
-                $(this).siblings().css('opacity', '0.3')
-            }, function(){
-                $(this).siblings().css('opacity', '1');
-            });
-            }, 
-        );
-    </script>
 
 </head>
 
 <body>
     <!-- 頁首Header -->
+    
     <header>
         <div class="nav">
             <a href="index.html" class="gametopiaLogo">
                 <img src="./pics/首頁/Header Logo.svg" alt="">
             </a>
-            <input type="text" placeholder="人數 / 類型 / 時間段">
-            <ul class="headerList">
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="mainMenu">
+                <li>
+                    <a href="typeCamp.html">
+                        <div>
+                            <i class="fa-solid fa-dice"></i>
+                            <p>遊戲類別</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="shop.html">
+                        <i class="fa-solid fa-shop"></i>
+                        <p>遊戲商店</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="forum.html">
+                        <i class="fa-solid fa-comments"></i>
+                        <p>揪團討論</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="booking.html">
+                        <i class="fa-solid fa-book"></i>
+                        <p>事前訂位</p>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="memList">
                 <li>
                     <a href="member1.html">
-                        <img src="./pics/首頁/logIn.jpg" alt="">
+                        <i class="fa-solid fa-right-to-bracket"></i>
                         <p>LOG IN</p>
                     </a>
                 </li>
                 <li>
                     <a href="shoppingCart.html">
-                        <img src="./pics/首頁/cart.jpg" alt="">
+                        <i class="fa-solid fa-cart-shopping"></i>
                         <p>CART</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="berger">
-                        <img src="./pics/首頁/berger.jpg" alt="">
-                    </a>
+                    <button href="#" class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <div class="searchBox">
+                        <input type="text" placeholder="遊戲/類型/人數">
+                    </div>
                 </li>
 
             </ul>
         </div>
     </header>
 
-    <!-- 熱門分類 -->
+
+    <!-- 最新分類 -->
 
     <div class="hotType">
+
+        <div class="newTitle">
+            <h2>熱銷新品</h2>
+        </div>
 
         <ul>
             <li class="item1">
                 <a href="itemMain.html">
-                    <h3>小品遊戲</h3>
+                    <h3></h3>
                     <p>犯人在跳舞</p>
                 </a>
             </li>
             <li class="item2">
                 <a href="itemMain.html">
-                    <h3>派對遊戲</h3>
+                    <h3></h3>
                     <p>電車難題</p>
                 </a>
             </li>
             <li class="item3">
                 <a href="itemMain.html">
-                    <h3>策略遊戲</h3>
+                    <h3></h3>
                     <p>玖陣王國</p>
                 </a>
             </li>
             <li class="item4">
                 <a href="itemMain.html">
-                    <h3>派對遊戲</h3>
+                    <h3></h3>
                     <p>字字轉機</p>
                 </a>
             </li>
             <li class="item5">
                 <a href="itemMain.html">
-                    <h3>陣營遊戲</h3>
+                    <h3></h3>
                     <p>機密代號</p>
                 </a>
             </li>
             <li class="item6">
                 <a href="itemMain.html">
-                    <h3>策略遊戲</h3>
+                    <h3></h3>
                     <p>ROOT</p>
                 </a>
             </li>
             <li class="item7">
                 <a href="itemMain.html">
-                    <h3>小品遊戲</h3>
+                    <h3></h3>
                     <p>情書</p>
                 </a>
             </li>
@@ -116,11 +151,35 @@
         </div>
 
         <div class="bannerSet">
-                    
-            <div class="banner b1"><a href="typeCamp.html"></a></div>
-            <div class="banner b2"><a href="typeCamp.html"></a></div>
-            <div class="banner b3"><a href="typeCamp.html"></a></div>
-            <div class="banner b4"><a href="typeCamp.html"></a></div>
+            <div class="banner b0">
+                <a href="typeCamp.html">
+                    <img src="./pics/首頁/dance banner 1.jpg" alt="">
+                </a>
+            </div>
+            <div class="banner b1">
+                <a href="typeCamp.html">
+                    <img src="./pics/首頁/root banner.webp" alt="">
+                </a>
+            </div>
+            <div class="banner b2">
+                <a href="typeCamp.html">
+                    <img src="./pics/首頁/the mind.webp" alt="">
+                </a>
+            </div>
+            <div class="banner b3">
+                <a href="typeCamp.html">
+                    <img src="./pics/首頁/sleepinggods 1.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="local">
+                <div class="button lbtn">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="button rbtn">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
                    
         </div>
     </article>
@@ -175,70 +234,78 @@
 
         <ul class="postCard">
             <li class="dance">
-                <a href="shop.html" class="fliter">
+                <a href="itemMain.html" class="fliter">
                     <div class="dato">
                         <div class="PnN">
-                            <img src="./pics/商品本頁/派大星大頭.jpg" alt="">
+                            <img src="./pics/mainItem/派大星大頭.jpg" alt="">
                         </div>
                         <div class="pplInfo">
+                            <div class="thisGameTag">犯人在跳舞</div>
                             <h4>Patrik Star</h4>
                             <div class="timeInfo">
-                                <p>1 Hour ago</p>
-                                <p>Posted on </p>
-                                <p>犯人在跳舞-Criminal</p>
+                                <p>2024.02.11 : 13:43</p>
+                                <div class="scoreStar">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p class="thisGameScore">4.6</p>
+                                </div>
                             </div>
+                            <p class="pplSay">超好笑的遊戲， <br>
+                            最喜歡每一局開始的時候總是要先尖叫的部分， <br>
+                            不到最後一刻不會知道誰是贏家XD
+                            </p>
                         </div>
                     </div>
-
-                    <p>超好笑的遊戲， <br>
-                        最喜歡每一局開始的時候總是要先尖叫的部分， <br>
-                        不到最後一刻不會知道誰是贏家XDDD
-                    </p>
                 </a>
             </li>
 
             <li class="incep">
-                <a href="shop.html" class="fliter">
+                <a href="itemMain.html" class="fliter">
                     <div class="dato">
                         <div class="PnN">
-                            <img src="./pics/商品本頁/Allen大頭.png" alt="">
+                            <img src="./pics/mainItem/Allen大頭.png" alt="">
                         </div>
                         <div class="pplInfo">
+                            <div class="thisGameTag">盜夢都市</div>                        
                             <h4>Allen Tuan</h4>
                             <div class="timeInfo">
-                                <p>16 mins ago</p>
-                                <p>Posted on </p>
-                                <p>盜夢都市-INCEPTION</p>
+                                <p>2024.02.15 : 10:08</p>
+                                <div class="scoreStar">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p class="thisGameScore">4.9</p>
+                                </div>
                             </div>
+                            <p class="pplSay">2036年玩過最有趣!常常遇到莫名的突發狀況， <br>跟著指示一步一步才發現原來早有預兆， <br>一切的變因都是自己的選擇所影響出來的! 神作沒有之一!
+                            </p>
                         </div>
                     </div>
-
-                    <p> 2036年玩過最有趣!常常遇到莫名的突發狀況，跟著指示一步一步才發現原來早有預兆，一切的變因都是自己的選擇所影響出來的! 神作沒有之一!
-                    </p>
                 </a>
             </li>
 
             <li class="Wwof">
-                <a href="shop.html" class="fliter">
+                <a href="itemMain.html" class="fliter">
                     <div class="dato">
                         <div class="PnN">
-                            <img src="./pics/商品本頁/阿寶大頭.jpg" alt="">
+                            <img src="./pics/mainItem/阿寶大頭.jpg" alt="">
                         </div>
                         <div class="pplInfo">
-                            <h4>Allen Tuan</h4>
+                            <div class="thisGameTag">狼人殺</div>
+                            
+                            <h4>Ah Boaaa</h4>
                             <div class="timeInfo">
-                                <p>1 mins ago</p>
-                                <p>Posted on </p>
-                                <p>狼人殺-Werewolf</p>
+                                <p>2024.02.14 : 19:33</p>
+                                <div class="scoreStar">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p class="thisGameScore">4.4</p>
+                                </div>
                             </div>
+                            <p class="pplSay">這版本人神狼之間的平衡做得很好 <br>
+                                個人最喜歡的角色是隱狼 <br>
+                                操作空間非常大 
+                                缺點就是沒有太多發言權
+                                <br> <br>
+                            </p>
                         </div>
-                    </div>
-
-                    <p> 這版本人神狼之間的平衡做得很好 <br>
-                        個人最喜歡的角色是隱狼 <br>
-                        操作空間非常大 <br>
-                        缺點就是沒有太多發言權
-                    </p>
+                    </div>    
                 </a>
             </li>
 
@@ -251,9 +318,6 @@
 
 
     </div>
-
-
-
 
     <!-- To top  -->
 
@@ -276,7 +340,8 @@
                 歡聲笑語、成王敗寇、爾虞我詐<br>
                 只要你享受當下，都是我們所樂見的 。</p>
             <div class="address">
-                <p>地址 : 天龍國天龍省天龍區天龍路87段87巷87號87樓</p>
+                <p>地址 : 天龍省天龍區天龍路87段87巷8號7樓</p>
+                <br>
                 <p>聯絡電話 : (029) 8756-4321</p>
                 <p>聯絡信箱:gametopia877@xmail.com</p>
                 <a href="" class="ig">
@@ -287,7 +352,8 @@
                 </a>
             </div>
             <h3>此網站為學生練習用作業，無有任何營利行為，若有侵權問題請聯繫以下信箱，會立即下架 <br>
-                smpss901@gmail.com</h3>
+                smpss901@gmail.com
+            </h3>
 
         </div>
 
@@ -307,7 +373,7 @@
 
 
 
-
+<script src="./JS/index.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>商店頁</title>
     <link rel="stylesheet" href="./CSS/style1.css">
+    <link rel="stylesheet" href="./CSS/header n footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
     <!-- 套用style1.css -->
 </head>
 
@@ -16,24 +20,63 @@
             <a href="index.html" class="gametopiaLogo">
                 <img src="./pics/首頁/Header Logo.svg" alt="">
             </a>
-            <input type="text" placeholder="人數 / 類型 / 時間段">
-            <ul class="headerList">
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="mainMenu">
+                <li>
+                    <a href="typeCamp.html">
+                        <i class="fa-solid fa-dice"></i>
+                        <p>遊戲類別</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="shop.html" class="nowPage">
+                        <i class="fa-solid fa-shop"></i>
+                        <p>遊戲商店</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="forum.html">
+                        <i class="fa-solid fa-comments"></i>
+                        <p>揪團討論</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="booking.html">
+                        <i class="fa-solid fa-book"></i>
+                        <p>事前訂位</p>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="memList">
                 <li>
                     <a href="member1.html">
-                        <img src="./pics/首頁/logIn.jpg" alt="">
+                        <i class="fa-solid fa-right-to-bracket"></i>
                         <p>LOG IN</p>
                     </a>
                 </li>
                 <li>
                     <a href="shoppingCart.html">
-                        <img src="./pics/首頁/cart.jpg" alt="">
+                        <i class="fa-solid fa-cart-shopping"></i>
                         <p>CART</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="berger">
-                        <img src="./pics/首頁/berger.jpg" alt="">
-                    </a>
+                    <button href="#" class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <div class="searchBox">
+                        <input type="text" placeholder="遊戲/類型/人數">
+                        <!-- <button>
+                            <i class="fa-solid fa-xmark"></i>
+                        </button> -->
+                    </div>
                 </li>
 
             </ul>
@@ -43,23 +86,25 @@
     <!-- 選擇器及分頁主標 -->
 
     <section class="shop">
-        <div class="fliter">
+        <div class="tagFliter">
+            <i class="fa-solid fa-filter"></i>
             <ul class="gametype">
-                <li>
+                <li data-category="陣營">
                     <p>陣營</p>
                 </li>
-                <li>
+                <li data-category="派對">
                     <p>派對</p>
                 </li>
-                <li>
-                    <p>卡牌</p>
+                <li data-category="小品">
+                    <p>小品</p>
                 </li>
-                <li>
-                    <p>角色扮演</p>
+                <li data-category="心機">
+                    <p>心機</p>
                 </li>
-                <li>
-                    <p>心理策略</p>
+                <li data-category="策略">
+                    <p>策略</p>
                 </li>
+                <i class="fa-regular fa-circle-xmark">清除</i>
             </ul>
             <ul class="pplnum">
                 <li>
@@ -96,7 +141,7 @@
 
     <div class="itemList">
         <ul class="items">
-            <li class="CriminalDance">
+            <li data-item="派對 小品 犯人在跳舞" class="CriminalDance">
 
                 <div class="imgs dance"></div>
                 <h3>犯人在跳舞-Criminal Dance</h3>
@@ -132,7 +177,7 @@
                 </div>
 
             </li>
-            <li class="TopHero">
+            <li data-item="派對 小品 英雄總是最後一個到" class="TopHero">
 
                 <div class="imgs THero"></div>
                 <h3>英雄總是最後一個到-Top Hero</h3>
@@ -171,7 +216,7 @@
                 </div>
 
             </li>
-            <li class="BANG">
+            <li data-item="陣營 小品 BANG" class="BANG">
 
                 <div class="imgs BANG1"></div>
                 <h3>BANG !</h3>
@@ -210,7 +255,7 @@
                 </div>
 
             </li>
-            <li class="Werewolf">
+            <li data-item="陣營 心機 狼人殺" class="Werewolf">
 
                 <div class="imgs WWolf"></div>
                 <h3>狼人殺-Werewolf</h3>
@@ -247,7 +292,7 @@
                 </div>
 
             </li>
-            <li class="Anomia">
+            <li data-item="派對 小品 字字轉機" class="Anomia">
 
                 <div class="imgs anomia"></div>
                 <h3>字字轉機-Anomia</h3>
@@ -283,7 +328,7 @@
                 </div>
 
             </li>
-            <li class="IncanGold">
+            <li data-item="派對 策略 印加寶藏" class="IncanGold">
 
                 <div class="imgs IGold"></div>
                 <h3>印加寶藏-Incan Gold</h3>
@@ -320,7 +365,7 @@
                 </div>
 
             </li>
-            <li class="LoveLette">
+            <li data-item="派對 小品 情書" class="LoveLette">
 
                 <div class="imgs LLetter"></div>
                 <h3>情書-Love letter</h3>
@@ -355,7 +400,7 @@
                 </div>
 
             </li>
-            <li class="Magnolia">
+            <li data-item="陣營 策略 心機 玖陣王國" class="Magnolia">
 
                 <div class="imgs mago"></div>
                 <h3>玖陣王國-Magnolia</h3>
@@ -395,7 +440,7 @@
                 </div>
 
             </li>
-            <li class="CheeseThief">
+            <li data-item="陣營 小品 乳酪大盜" class="CheeseThief">
 
                 <div class="imgs CThief"></div>
                 <h3>乳酪大盜-Cheese Thief</h3>
@@ -433,7 +478,7 @@
                 </div>
 
             </li>
-            <li class="YellowCards">
+            <li data-item="派對 小品 黃牌" class="YellowCards">
 
                 <div class="imgs YCards"></div>
                 <h3>黃牌-Yellow Cards</h3>
@@ -469,7 +514,7 @@
                 </div>
 
             </li>
-            <li class="BloodBound">
+            <li data-item="陣營 策略 血契獵殺" class="BloodBound">
 
                 <div class="imgs BBound"></div>
                 <h3>血契獵殺-Blood Bound</h3>
@@ -505,7 +550,7 @@
                 </div>
 
             </li>
-            <li class="CodeNames">
+            <li data-item="陣營 小品 合作 機密代號" class="CodeNames">
 
                 <div class="imgs CNames"></div>
                 <h3>機密代號-Code Names</h3>
@@ -541,7 +586,7 @@
                 </div>
 
             </li>
-            <li class="Citadels">
+            <li data-item="經營 策略 富饒之城" class="Citadels">
 
                 <div class="imgs citadels"></div>
                 <h3>富饒之城-Citadels</h3>
@@ -579,7 +624,7 @@
                 </div>
 
             </li>
-            <li class="TrialByTrolley">
+            <li data-item="派對 小品 電車難題" class="TrialByTrolley">
 
                 <div class="imgs tbt"></div>
                 <h3>電車難題-Trial By Trolley</h3>
@@ -615,7 +660,7 @@
                 </div>
 
             </li>
-            <li class="TheMessage">
+            <li data-item="陣營 策略 心機 風聲" class="TheMessage">
 
                 <div class="imgs tMesge"></div>
                 <h3>風聲-The Message</h3>
@@ -650,7 +695,7 @@
                 </div>
 
             </li>
-            <li class="avalon">
+            <li data-item="陣營 心機 阿瓦隆" class="avalon">
 
                 <div class="imgs AVA"></div>
                 <h3>阿瓦隆-Avalon</h3>
@@ -691,7 +736,7 @@
     <!-- 換頁鍵-->
 
     <div class="changePage">
-        <a href="#" class="pageNow">1</a>
+        <a href="#" class="pageHere">1</a>
         <a href="#">2</a>
         <a href="#">3</a>
         <a href="#">4</a>
@@ -739,19 +784,49 @@
 
 
 
+    <script>
+
+    document.querySelector('.searchBox input').addEventListener('input', function() {
+            searchProduct();
+    });
+
+    
+    function searchProduct() {
+        let productName = document.querySelector('.searchBox input').value;
+        let itemList = document.querySelectorAll('.items>li');
+
+        itemList.forEach(function(item) {
+            let dataItem = item.getAttribute('data-item');
+
+            if (dataItem.indexOf(productName) !== -1) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+
+
+    let cleanTrigged = document.querySelector('.gametype i');
+    cleanTrigged.addEventListener('click', ()=>{
+        let lis = document.querySelectorAll('.tagFliter li');
+        let items = document.querySelectorAll(".items>li");
+        lis.forEach((li) => {
+            li.classList.remove("trigged");
+        });
+        items.forEach((item) => {
+            item.style.display = 'block';
+        });
+    });
+
+    </script>
 
 
 
 
 
 
-
-
-
-
-
-
-
+<script src="./JS/index.js"></script>
 </body>
 
 </html>

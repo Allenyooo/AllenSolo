@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>商品主頁</title>
     <link rel="stylesheet" href="./CSS/style1.css">
+    <link rel="stylesheet" href="./CSS/header n footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./JS/index.js"></script>
     <!-- 套用style1.css -->
 </head>
 
@@ -16,24 +20,63 @@
             <a href="index.html" class="gametopiaLogo">
                 <img src="./pics/首頁/Header Logo.svg" alt="">
             </a>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
-            <ul class="headerList">
+            <ul class="mainMenu">
                 <li>
-                    <a href="index.html">
-                        <img src="./pics/首頁/logIn.jpg" alt="">
+                    <a href="typeCamp.html">
+                        <i class="fa-solid fa-dice"></i>
+                        <p>遊戲類別</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="shop.html">
+                        <i class="fa-solid fa-shop"></i>
+                        <p>遊戲商店</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="forum.html">
+                        <i class="fa-solid fa-comments"></i>
+                        <p>揪團討論</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="booking.html">
+                        <i class="fa-solid fa-book"></i>
+                        <p>事前訂位</p>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="memList">
+                <li>
+                    <a href="member1.html">
+                        <i class="fa-solid fa-right-to-bracket"></i>
                         <p>LOG IN</p>
                     </a>
                 </li>
                 <li>
                     <a href="shoppingCart.html">
-                        <img src="./pics/首頁/cart.jpg" alt="">
+                        <i class="fa-solid fa-cart-shopping"></i>
                         <p>CART</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="berger">
-                        <img src="./pics/首頁/berger.jpg" alt="">
-                    </a>
+                    <button href="#" class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <div class="searchBox">
+                        <input type="text" placeholder="遊戲/類型/人數">
+                        <!-- <button>
+                            <i class="fa-solid fa-xmark"></i>
+                        </button> -->
+                    </div>
                 </li>
 
             </ul>
@@ -45,17 +88,29 @@
 
         <article class="viewMain">
 
-            <div class="mainPic"></div>
+            <div class="mainPic">
+                <img src="./pics/mainItem/犯人在跳舞.png" alt="">
+            </div>
             <ul class="subPics">
-                <li class="subPic1"></li>
-                <li class="subPic2"></li>
-                <li class="subPic3"></li>
-                <li class="subPic4"></li>
+                <li onmouseover="changeMainImg('./pics/mainItem/sub1.jpeg')" onmouseout="reMainImg('./pics/mainItem/犯人在跳舞.png')" class="subPic1">
+                    <img src="./pics/mainItem/sub1.jpeg" alt="">
+                </li>
+                <li onmouseover="changeMainImg('./pics/mainItem/sub2.jpg')" onmouseout="reMainImg('./pics/mainItem/犯人在跳舞.png')" class="subPic2">
+                    <img src="./pics/mainItem/sub2.jpg" alt="">
+                </li>
+                <li onmouseover="changeMainImg('./pics/mainItem/sub3.webp')" onmouseout="reMainImg('./pics/mainItem/犯人在跳舞.png')" class="subPic3">
+                    <img src="./pics/mainItem/sub3.webp" alt="">
+                </li>
+                <li onmouseover="changeMainImg('./pics/mainItem/sub4.webp')" onmouseout="reMainImg('./pics/mainItem/犯人在跳舞.png')" class="subPic4">
+                    <img src="./pics/mainItem/sub4.webp" alt="">
+                </li>
             </ul>
 
         </article>
 
+
         <main class="introText">
+            
             <h1>犯人在跳舞-Criminal Dance</h1>
             <p>故事背景<br>
                 <br>
@@ -86,7 +141,7 @@
             <div class="itemNums">
                 <h4>數量</h4>
                 <button class="removeNum">-</button>
-                <input type="text">
+                <input type="text" value="1">
                 <button class="addNum">+</button>
             </div>
             <div class="addCart">
@@ -103,7 +158,7 @@
         <h3>犯人在跳舞-Criminal Dance</h3>
         <div class="star">
             <p>4.7</p>
-            <img src="./pics/商品本頁/評分星星.png" alt="">
+            <img src="./pics/mainItem/評分星星.png" alt="">
             <p>(2,266)</p>
         </div>
 
@@ -116,54 +171,54 @@
         <ul class="pplScore">
             <li>
                 <div class="dato">
-                    <img src="./pics/商品本頁/阿寶大頭.jpg" alt="">
+                    <img src="./pics/mainItem/阿寶大頭.jpg" alt="">
                     <h4>阿寶</h4>
                 </div>
-                <img src="./pics/商品本頁/評分星星.png" alt="" class="pplStar">
+                <img src="./pics/mainItem/評分星星.png" alt="" class="pplStar">
                 <p>遊戲設計讓【犯人在跳舞】在進行時很有代入感。<br>
                     也難怪近來PTT熱門討論話題之一，少不了【犯人在跳舞】。<br>
                     真是居家外出兩相宜，方便攜帶的良品呀！</p>
             </li>
             <li>
                 <div class="dato">
-                    <img src="./pics/商品本頁/派大星大頭.jpg" alt="">
+                    <img src="./pics/mainItem/派大星大頭.jpg" alt="">
                     <h4>Patrik Star</h4>
                 </div>
-                <img src="./pics/商品本頁/評分星星.png" alt="" class="pplStar">
+                <img src="./pics/mainItem/評分星星.png" alt="" class="pplStar">
                 <p>超好笑的遊戲， <br>
                     最喜歡每一局開始的時候總是要先尖叫的部分， <br>
                     不到最後一刻不會知道誰是贏家XDDD</p>
             </li>
             <li>
                 <div class="dato">
-                    <img src="./pics/商品本頁/老皮大頭.jpg" alt="">
+                    <img src="./pics/mainItem/老皮大頭.jpg" alt="">
                     <h4>老皮</h4>
                 </div>
-                <img src="./pics/商品本頁/評分星星.png" alt="" class="pplStar">
+                <img src="./pics/mainItem/評分星星.png" alt="" class="pplStar">
                 <p>這款是我前幾款買的遊戲之一，很棒</p>
             </li>
             <li>
                 <div class="dato">
-                    <img src="./pics/商品本頁/Minion大頭.jpg" alt="">
+                    <img src="./pics/mainItem/Minion大頭.jpg" alt="">
                     <h4>Minion Wee</h4>
                 </div>
-                <img src="./pics/商品本頁/評分星星.png" alt="" class="pplStar">
+                <img src="./pics/mainItem/評分星星.png" alt="" class="pplStar">
                 <p>讚讚，個人覺得這款比同樣輕型派對的＂情書＂還要有趣！重點是支援人數也比較多～然後遊戲設置比較偏麻煩一點，有可能玩到最後大家都不是犯人的情形（忘記把犯人放進去XDD）</p>
             </li>
             <li>
                 <div class="dato">
-                    <img src="./pics/商品本頁/Allen大頭.png" alt="">
+                    <img src="./pics/mainItem/Allen大頭.png" alt="">
                     <h4>Allen Tuan</h4>
                 </div>
-                <img src="./pics/商品本頁/評分星星.png" alt="" class="pplStar">
+                <img src="./pics/mainItem/評分星星.png" alt="" class="pplStar">
                 <p>這是還算不錯的小遊戲! 不過可能五人以上會比較耐玩的樣子?我之前四人玩蠻快大家就有點膩了</p>
             </li>
             <li>
                 <div class="dato">
-                    <img src="./pics/商品本頁/Alice大頭.jpg" alt="">
+                    <img src="./pics/mainItem/Alice大頭.jpg" alt="">
                     <h4>Alice Dream</h4>
                 </div>
-                <img src="./pics/商品本頁/評分星星.png" alt="" class="pplStar">
+                <img src="./pics/mainItem/評分星星.png" alt="" class="pplStar">
                 <p>我們玩的時候有互相討論「犯人在誰那邊」欺騙其他玩家，會更好玩。</p>
             </li>
         </ul>
@@ -278,6 +333,19 @@
 
     </footer>
 
+    <script>
+        let MainImg = document.querySelector('.mainPic img');
+        console.log(MainImg);
+
+        function changeMainImg(newImg){
+            MainImg.src = newImg;
+        };
+
+        function reMainImg(defaultImg) {
+            MainImg.src = defaultImg;
+        }
+
+    </script>
 </body>
 
 </html>

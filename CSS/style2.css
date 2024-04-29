@@ -12,185 +12,6 @@ body {
 }
 
 
-/* 頁首Header */
-
-header {
-    /* height: 80px; */
-    width: 100%;
-    background-color: #fff;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 5;
-}
-
-.nav {
-    display: flex;
-    /* outline: 1px red solid; */
-    justify-content: space-between;
-}
-
-.gametopiaLogo {
-    margin-left: 20px;
-}
-
-.gametopiaLogo img {
-    display: block;
-    width: 200px;
-}
-
-.nav input {
-    margin-top: 10px;
-    outline: none;
-    border: transparent;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    height: 60%;
-    padding: 10px 20px;
-    font-size: 20px;
-    line-height: 1.6;
-    border-radius: 40px;
-    width: 30%;
-}
-
-.headerList {
-    display: flex;
-    /* outline: 1px red solid; */
-    align-items: end;
-}
-
-.headerList li {
-    margin-right: 20px;
-}
-
-.headerList a {
-    display: block;
-    display: flex;
-    height: 56px;
-    text-decoration: none;
-    font-size: 16px;
-    /* outline: 1px red solid; */
-}
-
-.headerList img {
-    width: 32px;
-    height: 32px;
-    margin-top: 10px;
-}
-
-.headerList p {
-    color: #BDBDBD;
-    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
-    padding-top: 15px;
-    margin-left: 10px;
-    letter-spacing: 5px;
-    /* outline: 1px red solid; */
-}
-
-.berger img {
-    width: 44px;
-    height: 44px;
-    margin-top: 5px;
-}
-
-
-
-
-/* Footer */
-
-footer {
-    background-color: #C3D0EA;
-    line-height: 1.6;
-}
-
-.aboutUs {
-    text-align: center;
-}
-
-footer h2 {
-    background-image: url(../pics/首頁/About\ us.png);
-    background-repeat: no-repeat;
-    height: 100px;
-    /* outline: 2px red solid; */
-    width: 488px;
-    margin: 0 auto;
-    text-align: right;
-    color: #229162;
-    font-size: 32px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgb(255, 255, 255);
-    padding-top: 90px;
-    padding-right: 30px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}
-
-.lineBar {
-    display: flex;
-}
-
-.lineBar hr {
-    width: 60%;
-    background-color: #229162;
-    height: 2px;
-}
-
-/* footer h2::before {
-    display: block;
-    content: '.';
-    width: 10px;
-    height: 10px;
-    background-color: #229162;
-    transform: rotate(45deg);
-} */
-
-.infoUs {
-    display: inline-block;
-    text-align: left;
-    /* outline: 2px red solid; */
-    margin-bottom: 10px;
-
-}
-
-.address {
-    background-color: #fff;
-    width: 40%;
-    margin: 0 auto;
-    border-radius: 20px;
-    padding: 10px;
-    line-height: 1.8;
-    margin-bottom: 10px;
-    position: relative;
-}
-
-.address p {
-    text-align: left;
-}
-
-
-.address img {
-    width: 60px;
-    height: 100%;
-}
-
-.ig {
-    position: absolute;
-    right: 100px;
-    bottom: 20px;
-    z-index: 1;
-}
-
-.fb {
-    position: absolute;
-    right: 68px;
-    bottom: 4px;
-    z-index: 2;
-}
-
-footer h3 {
-    font-weight: bold;
-}
-
 /* 大標Title */
 
 .forumDiv {
@@ -307,22 +128,22 @@ footer h3 {
 }
 
 .pstar {
-    background-image: url(../pics/討論區/字字轉機.jpg);
+    background-image: url(../pics/討論區/Frame\ 277.png);
     background-position: center top;
 }
 
 .DnD {
-    background-image: url(../pics/討論區/DnD.jpg);
+    background-image: url(../pics/討論區/Frame\ 277.png);
     background-position: center top;
 }
 
 .Wwf {
-    background-image: url(../pics/討論區/狼殺.jpg);
+    background-image: url(../pics/討論區/Frame\ 277.png);
     background-position: center center;
 }
 
 .boring {
-    background-image: url(../pics/討論區/boring.webp);
+    background-image: url(../pics/討論區/Frame\ 277.png);
     background-position: center center;
 }
 
@@ -498,11 +319,11 @@ footer h3 {
 }
 
 .searchBox {
-    border: 2px #229162 solid;
+    /* border: 2px #229162 solid; */
     border-radius: 4px;
     display: flex;
     justify-content: space-around;
-    padding: 10px 0;
+    /* padding: 10px 0; */
 }
 
 .searchBox li {
