@@ -128,8 +128,9 @@ body {
 }
 
 .tagFliter li:hover {
-    background-color: #229162;
-    color: #fff;
+    /* background-color: #229162;
+    color: #fff; */
+    transform: scale(1.1);
 }
 
 .tagFliter .trigged {

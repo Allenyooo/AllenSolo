@@ -9,6 +9,7 @@ $(document).ready(function () {
         $(this).siblings().css('opacity', '0.8');
     });
 
+
     // header搜尋點擊效果
     $('.search').click(function () {
 
